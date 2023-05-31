@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Add Page Title -->
+    <title>Announcement Page</title>
+    <link rel="stylesheet" type="text/css" href="q2a.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- Add Page Navigation -->
+    <header>
+        <!-- Add page navigation links -->
+        <nav>
+            <div class="logo"><a href="#">OU Walking Club</a></div>
+            <ul class="nav-links">
+                <li><a href="#">Walk Events</a></li>
+                <li><a href="#">Other Events</a></li>
+                <li><a href="#">Membership </a></li>
+                <li><a href="#">News Item</a></li>
+                <li><a href="#">Announcements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Add a form to page -->
+    <form>
+        <!-- Add label to sender -->
+        <label for="sender">Sender:</label>
+        <!-- Include Sender textbox -->
+        <input type="text" id="sender" name="sender" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="announcement">Announcement:</label>
+        <textarea id="announcement" name="announcement" rows="10" required></textarea>
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image">
+
+        <label for="send_date">Send Date:</label>
+        <input type="date" id="send_date" name="send_date" required>
+        <!-- Add Hidden Session Identifier -->
+        <input type="hidden" id="session_id" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090">
+        <!-- Add Submit Button -->
+        <input type="submit" value="Send">
+    </form>
+
+
+</body>
+
+</html>

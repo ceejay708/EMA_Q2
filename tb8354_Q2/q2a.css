@@ -1,0 +1,95 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        
+        nav {
+            /* Make Navigation flex to display on a line  */
+            display: flex;
+            /* Justify space between navigation items */
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+        }
+        
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin: 0 10px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            margin: 50px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        @media screen and (min-width: 1024px) {
+            form {
+                max-width: 700px;
+                margin-top: 100px;
+            }
+        }
+        
+        input[type="text"],
+        textarea,
+        input[type="date"],
+        input[type="file"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            align-self: flex-end;
+        }
